@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="background.js" type="text/javascript" defer></script>
+		<script src="vitals.js" type="text/javascript" defer></script>
+		<script src="script.js" type="text/javascript" defer></script>
+	</head>
+	<body>
+		<form id="CharacterGen">
+			<div>
+				<input type="number" id="nRace" value="8" min="1" max="8" onchange="saveStuff()">
+				d8 Race
+			</div>
+			<div>
+				<input type="number" id="nClass" value="12" min="1" max="12" onchange="saveStuff()">
+				d12 Class
+			</div>
+			<div>
+				<input type="number" id="nBackground" value="12" min="1" max="12" onchange="saveStuff()">
+				d12 Background
+			</div>
+			<div id="stats">
+				<div>
+					<input type="number" id="str" value="18" min="1" max="18" onchange="saveStuff()">
+					3d6 STR
+				</div>
+				<div>
+					<input type="number" id="dex" value="18" min="1" max="18" onchange="saveStuff()">
+					3d6 DEX
+				</div>
+				<div>
+					<input type="number" id="con" value="18" min="1" max="18" onchange="saveStuff()">
+					3d6 CON
+				</div>
+				<div>
+					<input type="number" id="int" value="18" min="1" max="18" onchange="saveStuff()">
+					3d6 INT
+				</div>
+				<div>
+					<input type="number" id="wis" value="18" min="1" max="18" onchange="saveStuff()">
+					3d6 WIS
+				</div>
+				<div>
+					<input type="number" id="cha" value="18" min="1" max="18" onchange="saveStuff()">
+					3d6 CHA
+				</div>
+			</div>
+			<input type="button" onclick="makeCharacter()" value="Make This Character">
+			<input type="button" onclick="randomCharacter()" value="Roll a Random Character">
+		</form>
+	</body>
+</html>
